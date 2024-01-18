@@ -1,0 +1,44 @@
+/*footer*/
+.footer {
+    background-color: $color-blue;
+    color: #fff;
+    
+    &__wrapper{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+      // .footer__logo
+    
+      &__logo {
+        font-size: 31px;
+        @include adaptiv-value("font-size", 30, 15, 0);
+      }
+    
+      // .footer__menu
+    
+      &__menu { 
+        display: flex;
+       li{
+        &:last-child a {
+          border-right: none;
+        }
+       }
+        a{
+          border-right: 0.4px solid #fff;
+          padding: 0 15px 0 15px;
+          color: #fff;
+          text-transform: uppercase;
+        font-size: 14px;
+        }
+       
+        
+      }
+      // .footer__2024
+      &__2024 {
+        @include adaptiv-value("font-size", 15, 12, 0);
+      }
+    }
+    

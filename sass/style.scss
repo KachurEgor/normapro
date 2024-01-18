@@ -1,0 +1,48 @@
+
+@import 'base/font';
+@import 'base/mixins';
+@import 'base/veriable';
+@import 'base/normalize'; 
+@import 'base/buttons';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/main';
+@import 'blocks/catalog';
+@import 'blocks/error';
+@import 'base/media';
+
+
+
+html,body{
+    font-family: $fonts-reg;
+   height: 100%;
+}
+a{
+    color: #fff;
+}
+a:hover{
+   color: $color-red;
+    transition: 0.5s;
+  }
+img{
+    width: 100%;
+
+}
+
+
+* {
+    font-display: swap;
+    margin: 0;  
+}
+.container {
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 0 15px;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

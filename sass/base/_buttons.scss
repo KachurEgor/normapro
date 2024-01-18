@@ -1,0 +1,22 @@
+
+.btn {
+    @include adaptiv-value("font-size", 18, 13, 0);
+    font-weight: 600;
+          background:$color-red;
+          color:#fff;
+          font-family: $fonts-light;
+          border: none;
+          text-transform: uppercase;
+          cursor: pointer;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          @include adaptiv-value("padding-left", 70, 10, 0);
+          @include adaptiv-value("padding-right", 70, 10, 0);
+        &:hover{
+        background: $color-blue;
+        transition: 0.5s;
+        }         
+    }
+    .btn-blue{
+        background:$color-blue;
+    }

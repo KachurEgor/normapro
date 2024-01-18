@@ -1,0 +1,36 @@
+.page-title{
+    background-image: url(../img/catalog-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include adaptiv-value("height", 250, 200, 0);
+    display: flex;
+    align-items: center;
+}
+.catalog-h1{
+    @include adaptiv-value("font-size", 35, 18, 0);
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px    
+}
+.catalog{
+    @include adaptiv-value("padding-top", 30, 30, 0);
+    @include adaptiv-value("padding-bottom", 50, 30, 0);
+    flex: 1 0 auto;
+&__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+&__item{
+    width: 15%;
+    cursor: pointer;
+    h4{
+      
+        @include adaptiv-value("font-size", 14, 12, 0);
+        margin-top: 10px;
+        font-family: $fonts-light;
+    }
+   
+}
+}
